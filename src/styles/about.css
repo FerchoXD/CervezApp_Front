@@ -1,0 +1,123 @@
+.about {
+    max-width: 800px;
+    margin: auto;
+    text-align: justify;
+  }
+  
+  .about h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .about-container {
+    padding: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    
+  }
+  
+  .about-text {
+    font-size: 20px;
+    font-family: "Arial", sans-serif;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    text-shadow: 1px 1px #ccc;
+    color: #333;
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .about-heading {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #E3A703;
+    text-align: justify;
+  }
+  
+  .about-image {
+    float: right;
+    max-width: 400px;
+    margin-left: 20px;
+    margin-top: -50px;
+    }
+    
+    .about-text {
+        text-align: justify;
+        text-justify: inter-word;
+      }
+    
+    
+    @media (max-width: 768px) {
+    .about-image {
+    float: none;
+    margin-left: 0;
+    max-width: 100%;
+    margin-bottom: 20px;
+    }
+    
+    .about-text {
+    margin-right: 450px;
+    }
+    }
+  
+  .about p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  .mission-container {
+    padding: 20px;
+  }
+  
+  .mission-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .values-container {
+    background:  #FEE2B1;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    
+  }
+  
+  .values-text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: justify;
+  }  
+
+  .values-container h2 {
+    color: #E3A703;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .values-container p {
+    color: #333;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.5;
+  }
+  
+  .values-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .values-container li {
+    margin-bottom: 10px;
+  }
+  
+  .values-container li strong {
+    margin-right: 10px;
+  }

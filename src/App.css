@@ -15,5 +15,14 @@ margin: 0 auto; /* Centrado horizontal */
 }
 
 .nav-link{
-   font-size: 30px;
+   font-size: 40px;
+}
+a {
+  text-decoration: none; /* quita el subrayado */
+  color: white;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  font-family: "Goudy Old Style", serif;
+}
+a:hover {
+  color: white; /* cambiar color de texto al pasar el mouse */
 }

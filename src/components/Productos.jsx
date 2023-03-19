@@ -17,7 +17,7 @@ function Productos(){
   
                                   <div class="col-md-4 mb-3">
                                       <div class="card">
-                                          <img class="img-fluid" alt="100%x280" src="public/images/FINAL.PNG"/>
+                                          <img class="img-fluid" alt="100%x280" src="images/FINAL.PNG"/>
                                           <div class="card-body">
                                               <h4 class="card-title">Titulo</h4>
                                               <p class="card-text">Texto</p>
@@ -28,7 +28,7 @@ function Productos(){
                                   </div>
                                   <div class="col-md-4 mb-3">
                                       <div class="card">
-                                          <img class="img-fluid" alt="100%x280" src="public/images/FINAL.PNG"/>
+                                          <img class="img-fluid" alt="100%x280" src="images/FINAL.PNG"/>
                                           <div class="card-body">
                                               <h4 class="card-title">Titulo</h4>
                                               <p class="card-text">Texto</p>
@@ -38,44 +38,7 @@ function Productos(){
                                   </div>
                                   <div class="col-md-4 mb-3">
                                       <div class="card">
-                                          <img class="img-fluid" alt="100%x280" src="public/images/FINAL.PNG"/>
-                                          <div class="card-body">
-                                              <h4 class="card-title">Titulo</h4>
-                                              <p class="card-text">Texto</p>
-  
-                                          </div>
-                                      </div>
-                                  </div>
-  
-                              </div>
-                          </div>
-                          <div class="carousel-item">
-                              <div class="row">
-  
-                                  <div class="col-md-4 mb-3">
-                                      <div class="card">
-                                          <img class="img-fluid" alt="100%x280" src="public/images/FINAL.PNG"/>
-                                          <div class="card-body">
-                                              <h4 class="card-title">Titulo</h4>
-                                              <p class="card-text">Texto</p>
-  
-                                          </div>
-  
-                                      </div>
-                                  </div>
-                                  <div class="col-md-4 mb-3">
-                                      <div class="card">
-                                          <img class="img-fluid" alt="100%x280" src="public/images/FINAL.PNG"/>
-                                          <div class="card-body">
-                                              <h4 class="card-title">Titulo</h4>
-                                              <p class="card-text">Texto</p>
-  
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="col-md-4 mb-3">
-                                      <div class="card">
-                                          <img class="img-fluid" alt="100%x280" src="public/images/FINAL.PNG"/>
+                                          <img class="img-fluid" alt="100%x280" src="images/FINAL.PNG"/>
                                           <div class="card-body">
                                               <h4 class="card-title">Titulo</h4>
                                               <p class="card-text">Texto</p>
@@ -91,7 +54,7 @@ function Productos(){
   
                                   <div class="col-md-4 mb-3">
                                       <div class="card">
-                                          <img class="img-fluid" alt="100%x280" src="public/images/FINAL.PNG"/>
+                                          <img class="img-fluid" alt="100%x280" src="images/FINAL.PNG"/>
                                           <div class="card-body">
                                               <h4 class="card-title">Titulo</h4>
                                               <p class="card-text">Texto</p>
@@ -102,7 +65,7 @@ function Productos(){
                                   </div>
                                   <div class="col-md-4 mb-3">
                                       <div class="card">
-                                          <img class="img-fluid" alt="100%x280" src="public/images/FINAL.PNG"/>
+                                          <img class="img-fluid" alt="100%x280" src="images/FINAL.PNG"/>
                                           <div class="card-body">
                                               <h4 class="card-title">Titulo</h4>
                                               <p class="card-text">Texto</p>
@@ -112,7 +75,44 @@ function Productos(){
                                   </div>
                                   <div class="col-md-4 mb-3">
                                       <div class="card">
-                                          <img class="img-fluid" alt="100%x280" src="public/images/FINAL.PNG"/>
+                                          <img class="img-fluid" alt="100%x280" src="images/FINAL.PNG"/>
+                                          <div class="card-body">
+                                              <h4 class="card-title">Titulo</h4>
+                                              <p class="card-text">Texto</p>
+  
+                                          </div>
+                                      </div>
+                                  </div>
+  
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                              <div class="row">
+  
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="images/FINAL.PNG"/>
+                                          <div class="card-body">
+                                              <h4 class="card-title">Titulo</h4>
+                                              <p class="card-text">Texto</p>
+  
+                                          </div>
+  
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="images/FINAL.PNG"/>
+                                          <div class="card-body">
+                                              <h4 class="card-title">Titulo</h4>
+                                              <p class="card-text">Texto</p>
+  
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="images/FINAL.PNG"/>
                                           <div class="card-body">
                                               <h4 class="card-title">Titulo</h4>
                                               <p class="card-text">Texto</p>

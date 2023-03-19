@@ -11,21 +11,21 @@ function Carousel(){
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
-          <img src="public/images/FINAL.PNG" class="d-block w-100" alt="..."/>
+          <img src="images/FINAL.PNG" class="d-block w-100" alt="..."/>
           <div class="carousel-caption d-none d-md-block">
             <h5>Titulo 1</h5>
             <p>Ejemplo</p>
           </div>
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-          <img src="public/images/FINAL.PNG" class="d-block w-100" alt="..."/>
+          <img src="images/FINAL.PNG" class="d-block w-100" alt="..."/>
           <div class="carousel-caption d-none d-md-block">
             <h5>Titulo 2</h5>
             <p>Ejemplo</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="public/images/FINAL.PNG" class="d-block w-100" alt="..."/>
+          <img src="images/FINAL.PNG" class="d-block w-100" alt="..."/>
           <div class="carousel-caption d-none d-md-block">
             <h5>Titulo 3</h5>
             <p>Ejemplo</p>

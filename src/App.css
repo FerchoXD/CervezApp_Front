@@ -20,7 +20,7 @@ margin: 0 auto; /* Centrado horizontal */
 a {
   text-decoration: none; /* quita el subrayado */
   color: white;
-  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  /* text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; */
   font-family: "Goudy Old Style", serif;
 }
 a:hover {

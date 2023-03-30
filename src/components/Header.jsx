@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const socket = io('http://localhost:3000/searchProduct');
 
 socket.on('searchProduct', (data) => {
+  console.log("Entro al socket");
   searchProduct(data);
 })
 
@@ -12,25 +13,27 @@ function searchProduct(data){
   const navigate = useNavigate();
   console.log("Soy de la function para el socket")
   if(data[0] !== undefined || data[0] !== null){
+    console.log("Si entre")
     console.log(data[0]);
-    navigate('/card', { state: { ...data[0] } });
+    navigate('/product', { state: { ...data[0] } });
   }
 }
 
 function Search() {
   const [searchTerm, setSearchTerm] = useState('');
-  console.log(searchTerm)
-    const handleSearch = async () => {
-      let name = searchTerm.split(' ')[0]
-      let brand = searchTerm.split(' ')[1]
-      console.log(name, brand)
-    const marin = localStorage.getItem('marin'); // Cambiado aquí
+
+  const navigate = useNavigate(); // move hook here
+
+  const handleSearch = async () => {
+    let name = searchTerm.split(' ')[0];
+    let brand = searchTerm.split(' ')[1];
+
+    const marin = localStorage.getItem('marin');
     if (!marin) {
-      // No hay token, manejar el error aquí
       console.error('No hay token disponible');
       return;
     }
-  
+
     try {
       const response = await fetch(`http://localhost:3000/product/search?name=${name}&brand=${brand}`, {
         method: 'GET',
@@ -39,16 +42,21 @@ function Search() {
           'Authorization': `Bearer ${marin}`
         },
       });
-      console.log(response)
+      console.log(response);
+
+      const data = await response.json();
+      if (data.length > 0) {
+        navigate('/products', { state: { ...data[0] } });
+      } else {
+        setShowError(true);
+      }
     } catch (error) {
       console.error(error);
     }
   };
-  
 
   return (
     <header>
-      {/* ...resto del código... */}
       <div className="search-container">
         <input
           type="text"

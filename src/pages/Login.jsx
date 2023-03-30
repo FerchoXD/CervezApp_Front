@@ -3,6 +3,16 @@ import '../styles/login.css';
 import io from 'socket.io-client';
 const socket = io('http://localhost:3000/login');
 
+function testLocalStorage() {
+  // Guardar un valor en localStorage
+  localStorage.setItem('mensaje', 'Hola desde localStorage');
+
+  // Recuperar el valor de localStorage
+  const mensaje = localStorage.getItem('mensaje');
+
+  // Imprimir el valor en la consola
+  console.log(mensaje);
+}
 
 socket.on('login', (data) => {
   //console.log('Recibo todos los datos que son: ');
@@ -38,11 +48,11 @@ function Login({ isLoggedIn, setIsLoggedIn }) {
   const [error, setError] = useState('');
 
 
-  useEffect(() => {
-    if (loggedIn) {
-      window.location.href = '/';
-    }
-  }, [loggedIn]);
+  // useEffect(() => {
+  //   if (loggedIn) {
+  //     window.location.href = '/';
+  //   }
+  // }, [loggedIn]);
 
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
@@ -51,14 +61,13 @@ function Login({ isLoggedIn, setIsLoggedIn }) {
   const handlePasswordChange = (event) => {
     setPassword(event.target.value);
   };
-
   const handleSubmit = async (event) => {
     event.preventDefault();
     const raw = JSON.stringify({
       email: email,
       password: password,
     });
-
+  
     try {
       const response = await fetch('http://localhost:3000/user/login', {
         method: 'POST',
@@ -69,11 +78,9 @@ function Login({ isLoggedIn, setIsLoggedIn }) {
       const data = await response.json();
   
       if (response.ok) {
-        setIsLoggedIn(true); // No olvides actualizar el estado de App
         localStorage.setItem('token', data.token);
-        setLoggedIn(true);
+        setIsLoggedIn(true);
       } else {
-        // Manejar el error de inicio de sesión aquí
         setError(data.message);
       }
     } catch (error) {

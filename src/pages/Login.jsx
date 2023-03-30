@@ -1,12 +1,35 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/login.css';
 import io from 'socket.io-client';
-
 const socket = io('http://localhost:3000/login');
+
+
 socket.on('login', (data) => {
-  console.log('Recibo todos los datos que son: ');
-  console.log(data);
+  //console.log('Recibo todos los datos que son: ');
+  try {
+    // Verificamos si data ya es un objeto, de lo contrario lo parseamos
+    let response = typeof data === "object" ? data : JSON.parse(data);
+    // console.log('Respuesta:', JSON.stringify(response, null, 2));
+
+    // Accedemos a las propiedades "status" y "token" a través del objeto "User"
+    if(response.User.status === 200){
+      console.log('Entro');
+      let token = response.User.token
+      //console.log(token);
+      //localStorage.setItem('token', token);
+      prueba(data)
+    }
+  } catch (error) {
+    console.error('Error al analizar el JSON: ', error);
+  }
 });
+
+function prueba(data) {
+  console.log("Function prueba")
+  console.log(data.User.token);
+  localStorage.setItem('marin', data.User.token);
+  //socket.emit('login', data);
+}
 
 function Login({ isLoggedIn, setIsLoggedIn }) {
   const [email, setEmail] = useState('');

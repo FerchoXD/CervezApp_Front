@@ -79,4 +79,4 @@ function Register({ setIsLoggedIn }) {
   );
 }
 
-export default Register;
+export default Register;  

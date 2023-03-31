@@ -34,7 +34,7 @@ function App() {
             <Route path="/products" element={<Productos />} />
             <Route path="/register" element={<Register setIsLoggedIn={setIsLoggedIn} />} />
             <Route path="/login" element={<Login isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
-            <Route path="/card" element={<Productos />} />
+            <Route path="/product" element={<Productos />} />
           </Routes>
         </div>
       </Router>

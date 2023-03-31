@@ -5,7 +5,6 @@ import { useNavigate } from 'react-router-dom';
 const socket = io('http://localhost:3000/searchProduct');
 
 socket.on('searchProduct', (data) => {
-  console.log("Entro al socket");
   searchProduct(data);
 })
 
@@ -13,16 +12,12 @@ function searchProduct(data){
   const navigate = useNavigate();
   console.log("Soy de la function para el socket")
   if(data[0] !== undefined || data[0] !== null){
-    console.log("Si entre")
     console.log(data[0]);
     navigate('/product', { state: { ...data[0] } });
   }
 }
-
 function Search() {
   const [searchTerm, setSearchTerm] = useState('');
-
-  const navigate = useNavigate(); // move hook here
 
   const handleSearch = async () => {
     let name = searchTerm.split(' ')[0];
@@ -46,7 +41,8 @@ function Search() {
 
       const data = await response.json();
       if (data.length > 0) {
-        navigate('/products', { state: { ...data[0] } });
+        // Navegar a la ruta "/products" y enviar datos como parámetros
+        window.location.href = `/products?name=${name}&brand=${brand}`;
       } else {
         setShowError(true);
       }

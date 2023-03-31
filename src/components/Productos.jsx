@@ -15,8 +15,16 @@ function Productos() {
         return;
       }
 
+      let url = 'http://localhost:3000/product/';
+      if (name || brand) {
+        url += `search?name=${name}&brand=${brand}`;
+      } else {
+        url = 'http://localhost:3000/product/all';
+      }
+
       try {
-        const response = await fetch(`http://localhost:3000/product/search?name=${name}&brand=${brand}`, {
+        console.log(url)
+        const response = await fetch(url, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -49,9 +57,9 @@ function Productos() {
                   <img className="img-fluid" alt="100%x280" src={product.image || 'images/FINAL.PNG'} />
                   <div className="card-body">
                     <h4 className="card-title">{product.name} {product.brand}</h4>
-                    <p className="card-text">Contiene {product.size}</p>
+                    <p className="card-text">Contiene {product.size}{product.unit}</p>
                     <p className="card-text">Quedan {product.stock} piezas</p>
-                    <p className="card-text">{product.price} Mxn</p>
+                    <p className="card-text">${product.price} Mxn</p>
                   </div>
                 </div>
               </div>
